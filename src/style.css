@@ -50,6 +50,9 @@
 body{
   overflow-x: hidden;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 #nav-bar{
   display: flex;
@@ -252,4 +255,10 @@ body{
     spin 3s ease-in-out infinite,
     bob 2s ease-in-out infinite;
   z-index: 1;
+}
+
+#copyright {
+  margin-top: 5rem;
+  font-size: 0.875rem;
+  color: var(--text);
 }
