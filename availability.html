@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/availability.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Availability | Book a Professional DJ in Victoria</title>
+  </head>
+  <body>
+    <div id="app">
+        <div id="nav-bar">
+        <div class="nav-link">
+          <a href="/">Home</a>
+        </div>
+        <div class="nav-link">
+          <a href="/events">Events</a>
+        </div>
+        <div class="nav-link">
+          <a href="/reviews">Reviews</a>
+        </div>
+        <div class="nav-link">
+          <a href="/about">About DJ Elaydo</a>
+        </div>
+        <div class="nav-link">
+          <a href="/contact">Contact Us</a>
+        </div>
+      </div>
+        <h1>Inquire about Availability</h1>
+        <p>To inquire about availability for your event, please fill out the form below.</p>
+        <p>DJ Elaydo will email you to discuss your event details and confirm availability.</p>
+        <form id="availability-form" action="/submit-availability" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="event-date" required>
+            <label for="event-type">Event Type:</label>
+            <select id="event-type" name="event-type" required>
+            <option value="wedding">Wedding</option>
+            <option value="corporate">Corporate Event</option>
+            <option value="private">Private Party</option>
+            <option value="other">Other</option>
+            </select>
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+  </body>
+</html>
