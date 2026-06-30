@@ -17,7 +17,7 @@ function toggleNavBar() {
     }
 }
 document.addEventListener("click", (event) => {
-    const target = event.target as Element;
+    const target = event.target;
     if (!target?.classList.contains("hamburger")) {
         const navBar = document.getElementById("nav-bar");
         if (navBar && !navBar.classList.contains("hidden")) {
