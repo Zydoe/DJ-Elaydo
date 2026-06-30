@@ -1,0 +1,22 @@
+
+body{
+  text-align: center;
+  overflow-x:hidden;
+}
+#app{
+  position: relative;
+}
+#headshot{
+  width: 20vw;
+  margin-top: 2rem;
+}
+h1{
+  margin-top: 10vh;
+}
+h2{
+  margin-top: 12vh;
+  text-align: left;
+}
+p{
+  text-align: left;
+}
