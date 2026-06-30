@@ -16,3 +16,12 @@ function toggleNavBar() {
         navBar.classList.toggle("hidden");
     }
 }
+document.addEventListener("click", (event) => {
+    const target = event.target as Element;
+    if (!target?.classList.contains("hamburger")) {
+        const navBar = document.getElementById("nav-bar");
+        if (navBar && !navBar.classList.contains("hidden")) {
+            navBar.classList.add("hidden");
+        }
+    }
+});
