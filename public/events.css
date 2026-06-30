@@ -1,4 +1,8 @@
-
+@media (max-width: 768px) {
+  #app{
+    height: 100%;
+  }
+}
 body{
   text-align: center;
   overflow-x:hidden;
@@ -10,9 +14,15 @@ h1{
   margin-top: 10vh;
   margin-bottom: 2rem;
 }
+#scroller-mask{
+  width: 100%;
+  overflow: hidden;
+}
 .event-item{
-  margin: 2rem;
+  margin-bottom: 2rem;
   margin-top: 5rem;
+  margin-left:0;
+  margin-right:0;
 }
 
 @keyframes scroll {
